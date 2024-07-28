@@ -224,7 +224,7 @@ margin-right: 165px;
    width: 326.67px;
 height: 272px;
     /* margin: 20px 0px; */
-    margin: 20px 0px;
+    margin: 10px 0px;
 background-color: rgba(0, 0, 0, 0.2);
 filter: brightness(80%);
 border-radius: 18px;
@@ -249,10 +249,50 @@ background: rgba(255, 255, 255, 0.1);
 .name{
     color: white;
     position: absolute;
-    top: 35%;
+    top: 70%;
 }
 .trainer{
     position: absolute;
     color:  rgba(255, 255, 255, 0.5);
-    top: 40%;
+    top: 80%;
+}
+/* footer styles */
+.footer{
+    
+    background: rgba(255, 255, 255, 0.1);
+    width: 1440px;
+    height: 489px;
+
+}
+.footer-section{
+  
+    width: 1059px;
+    height: 249px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 2rem auto;
+  margin-left: 190px;
+  margin-right: 190px;
+  margin-top: 60px;
+  gap: 60px;
+
+}
+.footer-logo{
+    font-weight: 800;
+    font-size: 35px;
+    color: rgb(230, 83, 60);
+}
+.get-start> h3,p{
+color: white;
+}
+.get-start> p{
+color: rgba(255, 255, 255, 0.5);
+}
+.footer-section hr{
+    
+    margin-bottom: 90px;
+}
+.copy{
+text-align: center;
 }
