@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 body{
     font-family: "Inter", sans-serif;
+    width: 1440px;
+    height: 100%;
+/* background-color: black; */
 }
 /* default styles */
 
 .container{
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
    margin: 5rem auto;
+}
+.head-tittle{
+    font-size: 48px;
+font-weight: 900;
+color: rgb(255, 255, 255);
+}
+.head-description{
+font-size: 14px;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.5);
+
 }
 span{
    
@@ -22,9 +36,11 @@ background: rgb(230, 83, 60);
 /* default styles end */
 .header{
    
-width: 1440px;
-height: 715px;
+
+/* height: 715px; */
+/* margin: 0 auto; */
 background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+background-color: black;
 }
 .nav-container{
     width: 90%;
@@ -83,7 +99,7 @@ color: rgb(255, 255, 255);
 .get-btn{
     padding: 16px 40px 16px 40px;
     border-radius: 42px;
-
+color:rgb(255, 255, 255) ;
 background: rgb(230, 83, 60);
 }
 .get-app{
@@ -93,4 +109,57 @@ background: rgb(230, 83, 60);
 .image-get-body img{
 margin-right:214px ;
 margin-top: 50px;
+}
+/* change your havbits styles here */
+.main{
+  
+}
+.your-habits{
+    /* margin-top: 130px; */
+    background:black;
+  /* margin-bottom: 91px; */
+ 
+   
+}
+.change-habits{
+    /* width: 1044px; */
+width: 1044px;
+
+padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 58px;
+}
+
+.habits-photo{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 190px;
+    margin-right: 190px;
+   padding-bottom: 100px;
+ 
+}
+.habits-photo img{
+border-radius: 50%;
+}
+.movement-head{
+font-size: 18px;
+font-weight: 600;
+color: rgb(255, 255, 255);
+
+/* margin-left: 190px;
+margin-right: 190px; */
+
+justify-content: space-around;
+
+}
+.movementh3,.head-descriptionp{
+    width: 231px;
+}
+.head-descriptionp{
+    font-size: 14px;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.5);
 }
