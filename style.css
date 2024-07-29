@@ -196,7 +196,28 @@ margin-right: 165px;
 .get-btn{
     margin-top: 34px;
     margin-bottom: 20px;
+  
+    
 }
+  /* BMI calculater styles */
+  .bmi-calculater{
+/* text-align: center; */
+padding-bottom: 90px;
+width: 671px;
+height: 120px;
+margin: 2rem auto;
+  }
+
+.bmi-container{
+    width: 1440px;
+    height: 487px; 
+    background: rgb(34, 34, 34);
+}
+
+
+
+
+
 /* meet our team styles */
 .team{
 
@@ -261,7 +282,7 @@ background: rgba(255, 255, 255, 0.1);
     
     background: rgba(255, 255, 255, 0.1);
     width: 1440px;
-    height: 489px;
+    height: 400px;
 
 }
 .footer-section{
@@ -283,15 +304,21 @@ background: rgba(255, 255, 255, 0.1);
     font-size: 35px;
     color: rgb(230, 83, 60);
 }
+.fitness{
+    width: 443px; 
+}
 .get-start> h3,p{
 color: white;
+
 }
 .get-start> p{
 color: rgba(255, 255, 255, 0.5);
 }
-.footer-section hr{
-    
-    margin-bottom: 90px;
+.footer hr{
+    width: 1059.5px;
+height: 0;
+margin: 2rem auto;
+
 }
 .copy{
 text-align: center;
