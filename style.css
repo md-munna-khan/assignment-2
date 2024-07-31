@@ -78,7 +78,7 @@ color: rgb(255, 255, 255);
 .get-body{
  display: flex;
 justify-content: space-between;
-
+height: 715px;
 }
 .get-body-tittle{
     margin-left: 190px;
@@ -102,6 +102,7 @@ color: rgb(255, 255, 255);
     border-radius: 42px;
 color:rgb(255, 255, 255) ;
 background: rgb(230, 83, 60);
+border: none;
 }
 .get-app{
     padding: 16px 40px 16px 40px;
@@ -110,8 +111,62 @@ background: rgb(230, 83, 60);
 .image-get-body img{
 margin-right:214px ;
 margin-top: 50px;
+/* margin: 2rem auto; */
+
+}
+.image-get-body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.video-tutorial{
+position: absolute;
+bottom: 80px;
+left: -100px;
+color:rgb(255, 255, 255) ;
+width: 206px;
+height: 96px;
+padding: 0 auto;
+box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+
+text-align: center;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+}
+.video-tutorial>h3{
+    font-size: 24px;
+font-weight: 900;
+line-height: 24px;
+
+}
+
+
+.free-videos {
+    position: absolute;
+ right: 180px;
+ top: 200px;
+   width: 193px;
+height: 98px;
+padding: 0 auto;
+box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+text-align: center;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+   color: rgb(255, 255, 255);
+}
+.free-videos>h3{
+    /* font-size: 20px;
+font-weight: 500; */
+font-size: 24px;
+font-weight: 900;
+line-height: 24px;
 }
 /* change your havbits styles here */
+
 .main{
   
 }
@@ -212,11 +267,62 @@ margin: 2rem auto;
     width: 1440px;
     height: 487px; 
     background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+   
+}
+.calculater-chart{
+   margin-left: 190px;
+   margin-top: 52px;
+}
+.calculate-bmi{
+    width: 443px;
+    height: 34px;
+    margin-right: 190px;
+    margin-top: 45px;
+}
+.chart-tittle{
+font-size: 28px;
+font-weight: 900;
+color: rgb(255, 255, 255);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.5);
 }
 
-
-
-
+.form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+   border: none;
+color: rgba(255, 255, 255, 0.6);
+background: rgba(255, 255, 255, 0.1);
+}
+#factor{
+    width: 360px;
+    padding-top: -34px;
+}
+.btn-calculater{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+color:rgb(255, 255, 255) ;
+background: rgb(230, 83, 60);
+width: 224px;
+border: none;
+}
 
 /* meet our team styles */
 .team{
@@ -322,4 +428,29 @@ margin: 2rem auto;
 }
 .copy{
 text-align: center;
+}
+/* mobile responsive */
+@media screen and (max-width:576px) {
+    body{
+        width: 393px;
+height: 1024px;
+    }
+   .navbar{
+    display: none;
+   }
+    .get-body-tittle{
+    width: 352px;
+height: 335px;
+display: flex;
+flex-direction: column;
+margin: 2rem auto;
+    }
+    .image-get-body{
+        flex-direction: column;
+    }
+    .body-tittle{
+    font-size: 36px;
+font-weight: 900;
+line-height: 120%;
+    }
 }
