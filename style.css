@@ -43,6 +43,9 @@ background: rgb(230, 83, 60);
 background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 background-color: black;
 }
+.hum-barger{
+    display: none;
+}
 .nav-container{
     width: 90%;
     display: flex;
@@ -129,6 +132,7 @@ left: -100px;
 color:rgb(255, 255, 255) ;
 width: 206px;
 height: 96px;
+
 padding: 0 auto;
 box-sizing: border-box;
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -288,7 +292,9 @@ margin: 2rem auto;
 
 .bmi-container{
     width: 1440px;
-    height: 487px; 
+     /* height: 487px;  */
+     height: auto;
+   
     background: rgb(34, 34, 34);
     display: flex;
     justify-content: space-between;
@@ -297,10 +303,12 @@ margin: 2rem auto;
 .calculater-chart{
    margin-left: 190px;
    margin-top: 52px;
+  
 }
 .calculate-bmi{
     width: 443px;
-    height: 34px;
+    /* height: 34px; */
+    height: auto;
     margin-right: 190px;
     margin-top: 45px;
 }
@@ -373,6 +381,7 @@ border: none;
    display: flex;
    width: 326.67px;
 height: 272px;
+/* height: auto; */
     /* margin: 20px 0px; */
     margin: 10px 0px;
 background-color: rgba(0, 0, 0, 0.2);
@@ -385,7 +394,8 @@ display: grid;
 grid-template-columns: repeat(3,1fr);
 gap:1rem ;
 width: 1060px;
-height: 604px;
+/* height: 604px; */
+height: auto;
 margin: 2rem auto;
 padding: 20px;
 
@@ -454,33 +464,71 @@ text-align: center;
 }
 /* mobile responsive */
 @media screen and (max-width:576px) {
-   .container{
+   
+    .hum-barger{
+        display: block;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       color: white;
+
+       }
+       .hum-barger i{
+        font-size: 26px;
+       }
+        .container{
+            margin: 3rem auto;
     flex-direction: column;
     align-items: flex-start;
    }
-   .nav-container{
+ /* body{
+  margin-left: 20px;
+  margin-right: 20px;
+ } */
+   /* .nav-container{
     flex-direction: column;
     align-items: flex-start;
-   }
+   } */
+    /* .header{
+        margin-left: 20px;
+    } */
    .nav-logo{
-    margin-left: 0;
-    font-size: 30px;
+    margin-left: 20px;
+    font-size: 36px;
+font-weight: 900;
+margin-top: 52px;
+
    }
    .navbar{
     display: none;
    }
    .get-body{
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
    }
    .get-body-tittle{
     margin-left: 0;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     margin-bottom: 20px;
    }
    .body-tittle{
-    font-size: 48px;
+    font-size: 36px;
+font-weight: 900;
+    width: 285px;
+height: 129px;
+margin-left: 20px;
+   }
+   .body-description{
+    width: 274px;
+height: 96px;
+font-size: 16px;
+font-weight: 400;
+margin-left: 20px;
+   }
+   .get-body-tittle .get-btn,.get-app{
+ 
+    gap: 20px;
    }
    .image-get-body img{
     margin-right: 0;
@@ -506,19 +554,66 @@ font-weight: 900;
 line-height: 120%;
 margin: 0 auto;
    }
+   .chart-tittle{
+    font-size: 16px;
+font-weight: 900;
+line-height: 120%;
+   }
    .head-description{
     font-size: 14px;
 font-weight: 400;
 line-height: 24px;
 margin: 0 auto;
    }
-   .movement-head{
+   .habits-photo{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    margin: 2rem auto;
+   }
+   .movement-head,.run-extra,.run-easily,.our-team{
+  align-items: center;
+  text-align: center;
+margin: 2rem auto;
     justify-content: center;
     padding: auto;
-   width: 100%;
-   height: 100%;
+    flex-direction: column;
+  
    }
+   .bmi-container{
+    /* display: flex; */
+    /* flex-direction: column;
+   justify-content: center; */
+   /* display: grid;
+   grid-template-columns: 1fr 1fr; */
+ 
+   
+   }
+   .bmi-calculater{
+    display: flex;
+    flex-direction: column;
+   }
+   .bmi-calculater>h3{
+    margin-left: 20px;
+   }
+   .bmi-calculater>p{
+    margin-left: 20px;
+   }
+   .calculater-chart{
+    flex-direction: column;
+   }
+  .team-image-container{
+    width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   
+    margin: 20px 0px;
+}
+.team-image-container img{
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+
+
 }
