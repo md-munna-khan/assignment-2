@@ -6,8 +6,17 @@ body{
  margin: 0 auto;
 /* background-color: black; */
 }
+@font-face {
+    font-family: myfont;
+    src: url(Miama.ttf);
+}
 /* default styles */
-
+#miama{
+    font-family: myfont;
+   background: none;
+   font-weight: 500;
+   font-size: 100%;
+}
 .container{
     width: 90%;
     display: flex;
@@ -360,15 +369,10 @@ border: none;
 
 }
 .our-team{
-    /* margin: 0rem auto;
-    align-items: center;
-    width: 671px;
-    padding-bottom: 78px;
-    justify-content: center;
-    padding-top: 100px; */
-    width: 1044px;
+   
+    /* width: 1044px; */
+width: auto;
 
-/* padding-top: 50px; */
     justify-content: center;
     align-items: center;
   margin: 0 auto;
@@ -426,15 +430,17 @@ background: rgba(255, 255, 255, 0.1);
 }
 .footer-section{
   
-    width: 1059px;
-    height: 249px;
+    /* width: 1059px;
+    height: 249px; */
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   padding: 2rem auto;
   margin-left: 190px;
   margin-right: 190px;
-  margin-top: 60px;
+  margin-top: 60px; 
   gap: 60px;
 
 }
@@ -443,8 +449,12 @@ background: rgba(255, 255, 255, 0.1);
     font-size: 35px;
     color: rgb(230, 83, 60);
 }
+
 .fitness{
     width: 443px; 
+}
+.get-start{
+    width: 440px;
 }
 .get-start> h3,p{
 color: white;
@@ -579,11 +589,10 @@ margin: 2rem auto;
   
    }
    .bmi-container{
-    /* display: flex; */
-    /* flex-direction: column;
-   justify-content: center; */
-   /* display: grid;
-   grid-template-columns: 1fr 1fr; */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+ 
  
    
    }
@@ -599,6 +608,7 @@ margin: 2rem auto;
    }
    .calculater-chart{
     flex-direction: column;
+    margin: 0 auto;
    }
   .team-image-container{
     width: 100%;
@@ -614,6 +624,31 @@ margin: 2rem auto;
     margin: 2rem auto;
 }
 
-
-
+.calculate-bmi{
+    margin: 0 auto;
+}
+.footer-section{
+    /* margin: 2rem auto; */
+    margin: auto;
+   left: 0;
+    flex-direction: column;
+}
+.footer{
+    width: auto;
+    height: auto;
+   
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-logo,.get-start{
+    margin: 20px 0px;
+    align-items: flex-start;
+padding: 0px;
+}
+.get-start{
+    padding: 2rem auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px; 
+    gap: 0px;
+}
 }
