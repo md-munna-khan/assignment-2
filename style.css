@@ -7,15 +7,17 @@ body{
 /* background-color: black; */
 }
 @font-face {
-    font-family: myfont;
-    src: url(Miama.ttf);
+    font-family: miama;
+    src: url(Miama-Regular.woff);
 }
 /* default styles */
 #miama{
-    font-family: myfont;
+    font-family:miama ;
    background: none;
    font-weight: 500;
+   font-style: italic;
    font-size: 100%;
+   line-height: 20px;
 }
 .container{
     width: 90%;
@@ -125,8 +127,9 @@ border: none;
 .image-get-body img{
 margin-right:214px ;
 margin-top: 50px;
-/* margin: 2rem auto; */
 
+height: auto;
+width: 100%;
 }
 .image-get-body{
     position: relative;
@@ -139,7 +142,8 @@ bottom: 80px;
 left: -100px;
 
 color:rgb(255, 255, 255) ;
-width: 206px;
+width: 180px;
+
 height: 96px;
 
 padding: 0 auto;
@@ -181,7 +185,9 @@ top: 30px;
  top: 200px;
    width: 193px;
 height: 98px;
+
 padding: 0 auto;
+
 box-sizing: border-box;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 12px;
@@ -278,7 +284,8 @@ margin-right: 130px;
   
 }
 .run-easily{
-    width: 443px;
+    /* width: 443px; */
+    width: auto;
 height: auto;
 padding-left: 40px;
 margin-right: 165px;
@@ -474,7 +481,10 @@ text-align: center;
 }
 /* mobile responsive */
 @media screen and (max-width:576px) {
-   
+/* body{
+    align-items: center;
+    justify-content: center;
+} */
     .hum-barger{
         display: block;
        justify-content: center;
@@ -491,17 +501,7 @@ text-align: center;
     flex-direction: column;
     align-items: flex-start;
    }
- /* body{
-  margin-left: 20px;
-  margin-right: 20px;
- } */
-   /* .nav-container{
-    flex-direction: column;
-    align-items: flex-start;
-   } */
-    /* .header{
-        margin-left: 20px;
-    } */
+
    .nav-logo{
     margin-left: 20px;
     font-size: 36px;
@@ -545,14 +545,21 @@ margin-left: 20px;
     margin-top: 20px;
     width: 100%;
     height: auto;
+    left: 0;
+top: 0;
    }
    .video-tutorial{
     position: absolute;
-    margin-top: 20px;
+    left: 32px;
+    top: 800.38px;
    }
    .free-videos{
     position: absolute;
-    margin-top: 20px;
+   /* right: 50px; */
+   top: 50px;
+   right:35px ;
+
+   
    }
    .change-habits{
     width: 318px;
@@ -578,8 +585,11 @@ margin: 0 auto;
    .habits-photo{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    /* margin: 58px 0px; */
+    margin: 2rem auto;
+    padding: 0px;
    }
-   .movement-head,.run-extra,.run-easily,.our-team{
+   .movement-head,.run-extra,.our-team{
   align-items: center;
   text-align: center;
 margin: 2rem auto;
@@ -588,10 +598,40 @@ margin: 2rem auto;
     flex-direction: column;
   
    }
+   .head-tittle{
+    width: 287px;
+height: 76px;
+font-size: 32px;
+font-weight: 900;
+line-height: 120%;
+margin-bottom: 20px;
+   }
+   .run-easily{
+    padding: 25px;
+    max-width: 300px;
+    text-align: left;
+    margin: 2rem auto;
+    
+   }
+    .run-easily>button{
+    /* padding: 16px 40px 16px 40px;
+    margin: 24px 0px; */
+    width: 287px;
+height: 54px;
+   }
+   .run-image img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    top: 20px;
+   }
+   /* .run-extra{
+    margin: 2rem auto;
+   } */
    .bmi-container{
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: auto;
  
  
    
@@ -599,6 +639,8 @@ margin: 2rem auto;
    .bmi-calculater{
     display: flex;
     flex-direction: column;
+    width: 353px;
+height: 72px;
    }
    .bmi-calculater>h3{
     margin-left: 20px;
@@ -608,11 +650,14 @@ margin: 2rem auto;
    }
    .calculater-chart{
     flex-direction: column;
-    margin: 0 auto;
+    margin: 30px;
+    text-align: left;
+    padding: 20px;
+  
    }
   .team-image-container{
     width: 100%;
-    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
    
@@ -621,17 +666,33 @@ margin: 2rem auto;
 .team-image-container img{
     justify-content: center;
     align-items: center;
-    margin: 2rem auto;
+   
+    /* margin: 2rem auto; */
+    /* margin:  20px; */
+    margin-left: 20px;
+  padding: 0 auto;
+  max-width: 100%;
+  height: auto;
+ 
+}
+.trainer-name{
+    margin: 0 auto;
 }
 
 .calculate-bmi{
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    margin: 30px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .footer-section{
     /* margin: 2rem auto; */
     margin: auto;
    left: 0;
     flex-direction: column;
+    gap: none;
 }
 .footer{
     width: auto;
@@ -650,5 +711,14 @@ padding: 0px;
     margin-right: 0px;
     margin-top: 0px; 
     gap: 0px;
+}
+.footer-logo{
+    font-size: 70px;
+font-weight: 800;
+line-height: 120%;
+}
+.start{
+    font-size: 32px;
+font-weight: 700;
 }
 }
