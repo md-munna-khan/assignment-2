@@ -164,7 +164,7 @@ font-weight: 900;
 .middle{
   top: 10px;
   right: 20px;
- 
+
   position: absolute;
 
 }
@@ -185,6 +185,7 @@ top: 30px;
  top: 200px;
    width: 193px;
 height: 98px;
+
 
 padding: 0 auto;
 
@@ -322,7 +323,7 @@ margin: 2rem auto;
   
 }
 .calculate-bmi{
-    width: 443px;
+    width: 440px;
     /* height: 34px; */
     height: auto;
     margin-right: 190px;
@@ -481,10 +482,10 @@ text-align: center;
 }
 /* mobile responsive */
 @media screen and (max-width:576px) {
-/* body{
-    align-items: center;
-    justify-content: center;
-} */
+body{
+    width: 400px;
+    height: 1024px;
+}
     .hum-barger{
         display: block;
        justify-content: center;
@@ -551,19 +552,46 @@ top: 0;
    .video-tutorial{
     position: absolute;
     left: 32px;
-    top: 800.38px;
+    /* bottom: 100px;
+    width: auto;
+height: auto; */
+width: 160px;
+height: 100px;
+left: 32px;
+bottom: 250px;
+box-sizing: border-box;
+border: 0.76px solid rgba(255, 255, 255, 0.1);
+border-radius: 9.07px;
+
+backdrop-filter: blur(15.12px);
+background: rgba(48, 48, 48, 0.54);
+   }
+  .middle>p{
+    font-size: 16px;
+font-weight: 400;
+color: rgba(239, 237, 232, 0.65);
+  }
+   .video-tutorial>h3{
+    font-size: 18px;
    }
    .free-videos{
     position: absolute;
    /* right: 50px; */
    top: 50px;
-   right:35px ;
-
+   right:20px ;
+width: 170px;
+/* height: 70px; */
+height: auto;
    
    }
+
    .change-habits{
     width: 318px;
 height: 38px;
+   }
+
+   .head-description{
+    margin-bottom: 20px;
    }
    .head-tittle{
     font-size: 32px;
@@ -588,15 +616,21 @@ margin: 0 auto;
     /* margin: 58px 0px; */
     margin: 2rem auto;
     padding: 0px;
+    height: auto;
    }
    .movement-head,.run-extra,.our-team{
   align-items: center;
   text-align: center;
-margin: 2rem auto;
+margin: 0 auto;
     justify-content: center;
     padding: auto;
     flex-direction: column;
   
+   }
+   .movement-head{
+    /* margin-top: 20px;
+    padding-top: 20px; */
+    /* margin: none; */
    }
    .head-tittle{
     width: 287px;
@@ -610,8 +644,17 @@ margin-bottom: 20px;
     padding: 25px;
     max-width: 300px;
     text-align: left;
-    margin: 2rem auto;
+    margin: 0 auto;
     
+   }
+   .change-habits{
+    width: 316px;
+/* height: 72px; */
+/* height: 124px; */
+margin-bottom: 100px;
+align-items: center;
+justify-content: flex-start;
+text-align: center;
    }
     .run-easily>button{
     /* padding: 16px 40px 16px 40px;
@@ -642,6 +685,19 @@ height: 54px;
     width: 353px;
 height: 72px;
    }
+   .calculate-bmi{
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    width: 353px;
+height: auto;
+   }
+
+   .bmi-form{
+    margin: 0 auto;
+    width: auto;
+   }
    .bmi-calculater>h3{
     margin-left: 20px;
    }
@@ -650,13 +706,14 @@ height: 72px;
    }
    .calculater-chart{
     flex-direction: column;
-    margin: 30px;
+    margin: 10px;
     text-align: left;
     padding: 20px;
   
    }
   .team-image-container{
-    width: 100%;
+    /* width: 100%; */
+     width: 353px;;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -669,16 +726,29 @@ height: 72px;
    
     /* margin: 2rem auto; */
     /* margin:  20px; */
-    margin-left: 20px;
-  padding: 0 auto;
-  max-width: 100%;
+    /* margin-left: 20px; */
+  /* padding: 0 auto; */
+  /* max-width: 100%; */
   height: auto;
  
 }
 .trainer-name{
     margin: 0 auto;
 }
-
+.our-team{
+    /* width: 309px;
+    height: 124px;
+    margin: 0 auto;  */
+    display: flex;
+    flex-direction: column;
+    width: 353px;
+height: 72px;
+margin-top: 20px;
+padding: 20px;
+}
+.our-team>h3{
+    margin-top: 10px;
+}
 .calculate-bmi{
     /* margin: 0 auto; */
     flex-direction: column;
@@ -689,10 +759,14 @@ height: 72px;
 }
 .footer-section{
     /* margin: 2rem auto; */
-    margin: auto;
-   left: 0;
+    margin:0 auto;
+   /* left: 0; */
     flex-direction: column;
     gap: none;
+    width: 353px;
+height: auto;
+
+align-items: flex-start;
 }
 .footer{
     width: auto;
@@ -701,7 +775,7 @@ height: 72px;
     background: rgba(255, 255, 255, 0.1);
 }
 .footer-logo,.get-start{
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     align-items: flex-start;
 padding: 0px;
 }
@@ -715,7 +789,8 @@ padding: 0px;
 .footer-logo{
     font-size: 70px;
 font-weight: 800;
-line-height: 120%;
+margin: 10px;
+
 }
 .start{
     font-size: 32px;
