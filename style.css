@@ -717,7 +717,7 @@ display: grid;
 grid-template-columns: repeat(2,1fr);
 align-items: center;
 border-radius: 8px;
-font-size: 150px;
+
 background: rgba(255, 255, 255, 0.1);
 }
 #factor{
@@ -837,5 +837,14 @@ margin: 20px 0px;
 .start{
     font-size: 32px;
 font-weight: 700;
+}
+.copy{
+   padding: 40px 10px;
+    font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: left;
+color:rgba(255, 255, 255, 0.5);
 }
 }
