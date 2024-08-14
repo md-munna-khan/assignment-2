@@ -630,6 +630,10 @@ margin: 0 auto;
     flex-direction: column;
   
    }
+   .our-team{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
    .movement-head{
     /* margin-top: 20px;
     padding-top: 20px; */
@@ -687,6 +691,7 @@ height: 54px;
     flex-direction: column;
     width: 353px;
 height: 72px;
+margin-bottom: 20px;
    }
    .calculate-bmi{
     flex-direction: column;
@@ -702,6 +707,7 @@ height: auto;
 .bmi-form{
     /* width: auto; */
     width: 390px;
+  
     height: 168px;
     /* height: auto; */
 }
